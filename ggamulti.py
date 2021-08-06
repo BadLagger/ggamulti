@@ -51,7 +51,7 @@ if __name__ == '__main__':
         res_hours = full_time_sec // 3600
         res_min = (full_time_sec % 3600) // 60
         res_sec = full_time_sec % 60
-        res_nmea_time='%02d%02d%02d' %(res_hours, res_min, res_sec)
+        res_nmea_time='%02d%02d%02d.00' %(res_hours, res_min, res_sec)
     #    print(res_nmea_time)
         nmea_list[1]=res_nmea_time
         clear_new_nmea_msg = nmea_list[0:-1]
